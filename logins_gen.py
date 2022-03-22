@@ -17,8 +17,7 @@ class LoginGenerator:
 
 	def main(self):
 		try:
-
-			file_name = sys.argv[1] #input('Path: ')
+			file_name = sys.argv[1] 
 			with open(file_name, 'r') as file1:
 				word_lst = []
 				chars = [' ', '_', '-', '+', '.', ',', '!', '@']
@@ -58,7 +57,7 @@ class LoginGenerator:
 				print('Created!')
 						
 		except:
-			print('Wrong No path to the file!\nExample: longins_gen.py file_path.txt')
+			print('No such file!!!\nExample: longins_gen.py file_path.txt')
 
 
 if __name__ == '__main__': LoginGenerator() 
