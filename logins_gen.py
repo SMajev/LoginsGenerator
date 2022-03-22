@@ -21,7 +21,7 @@ class LoginGenerator:
 			file_name = sys.argv[1] #input('Path: ')
 			with open(file_name, 'r') as file1:
 				word_lst = []
-				chars = [' ', '_', '-', '+', '.', ',', '!']
+				chars = [' ', '_', '-', '+', '.', ',', '!', '@']
 				lines = file1.readlines()
 
 				for line in lines:
@@ -43,11 +43,9 @@ class LoginGenerator:
 						word_lst.append(name + surname + char)
 						word_lst.append(surname + char + name)
 						word_lst.append(surname + char + name)
-	
 						word_lst.append(char + surname + name)
 						word_lst.append(char + name + surname)
 						word_lst.append(surname + name + char)
-						
 						word_lst.append(f_name + char + surname)
 						word_lst.append(surname + char + f_name)
 						word_lst.append(f_surname + char + name)
