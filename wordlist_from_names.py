@@ -1,3 +1,5 @@
+
+
 class LoginGenerator:
 	def __init__(self):
 		self.main()
